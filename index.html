@@ -4,77 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Phate's Personal Website</title>
+    <title>Akshay Phate</title>
+
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="images/akshaypic.jpg" alt="Akshay Phate Profile Picture"></td>
-            <td><h1> Akshay Phate</h1>
-                <p><em>MTech CSE Student at <strong> <a href="https://www.iiit.ac.in/" 
-                    target="_blank">IIIT Hyderabad </a></strong></em></p>
-                <p>Hello. I am a computer programmer currently studying Computer Science at IIIT Hyderabad</p> </td>
-        </tr>
-    </table>
-    <hr>
 
-    <h3>Education</h3>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-                <th>Course</th>
-                <th>University</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>MTech</td>
-                <td>IIIT Hyderabad</td>
-                <td>2021 - 2023</td>
-            </tr>
-            <tr>
-                <td>B.E.</td>
-                <td>University of Mumbai</td>
-                <td>2014 - 2018</td>
-            </tr>
-            
-        </tbody>
-        <tfoot>
-            
-        </tfoot>      
-    </table>
-    <hr>
+    <!-- Navbar -->
+    <nav>
+        <h1>Akshay Phate</h1>
+        <ul class="navigation">
+            <li><a href="#" onclick="showHome(); return false;"; class="nav-link">Home</a></li>
+            <li><a href="#" onclick="showEducation(); return false;"; class="nav-link">Education</a></li>
+            <li><a href="#" onclick="showInterests(); return false;"; class="nav-link">Interests</a></li>
+            <li><a href="#" onclick="showContact(); return false;"; class="nav-link">Contact</a></li>  
+          </ul>
+    </nav>
 
-    <h3>Hobbies</h3>
-    <ol>
-        <li>Cricket</li>
-        <li>Reading</li>
-    </ol>
-    <hr>
+    <div class="container">
+      <div id="home">
+        <div id=homeitem>
+          <img src="assets/images/akshaypic.jpg" width="100%" alt="profile photo">
+        </div>
+        <div id=homeitem>
+          <p>
+            Hi, Welcome to my website. My name is Akshay Phate. I am currently studying in IIIT Hyderabad.
+          </p>
+        </div>
+      </div>
+  
+      <div id="about">
+        <h1>About</h1>
+      </div>
+  
+      <div id="education">
+        <div class="education-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name of the College</th>
+                <th>Passing Year</th>
+                <th>Degree/Certificate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://www.iiit.ac.in/">IIIT Hyderabad</a></td>
+                <td>2021-2023</td>
+                <td>M.Tech. CSE</td>
+              </tr>
+              <tr>
+                <td><a href="https://bvcoenm.edu.in/">BVCOE Navi Mumbai</a></td>
+                <td>2014-2018</td>
+                <td>B.E. CSE</td>
+              </tr>
+              <tr>
+                <td><a href="http://www.ruparel.edu/">Ruparel College, Mumbai</a></td>
+                <td>2011-2013</td>
+                <td>HSC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <div id="interests">
+        <div id="love">
+          <img src="assets/images/cricket.jpg" width="300px" height="300px" alt="cricket">
+          <h3>Playing Cricket</h3>
+        </div>
+        <div id="love">
+          <img src="assets/images/coding.jpg" width="300px" height="300px"  alt="coding">
+          <h3>Coding</h3>
+        </div>
+      </div>
+  
+      <div id="contact">
+        <div id=homeitem>
+          <h2>Link to My Resume</h2>
+        </div>
+        <div id=homeitem>
+          
+           <h2><a href="https://drive.google.com/file/d/1SuA0-lqZbtiNmbUV0BzFtIGNavLvwSTy/view?usp=sharing"
+            target="_none">Resume</a></h2> 
 
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>Java</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>C++</td>
-            <td>⭐</td>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>⭐⭐</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>⭐</td>
-        </tr>
-    </table>
-    <hr>
+        </div>
+        <div id=homeitem>
+          <h2>LinkedIn Acoout</h2>
+        </div>
+        <div id=homeitem>
+          
+           <h2><a href="https://www.linkedin.com/in/akshay-phate-67a038128/"
+            target="_none">LinkedIn Profile</a></h2> 
 
-    <p><a href="contact-me.html" target="_blank">Contact Me</a></p>
+        </div>
+        
+      </div>
+  
+    </div>
+    
+    <script src="assets/js/app.js"></script>
+
+
     
 </body>
 </html>
